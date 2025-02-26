@@ -2,12 +2,8 @@
     "version": 2,
     "builds": [
       {
-        "src": "{site_sindicato}/wsgi.py",
-        "use": "@vercel/python",
-        "config": {
-          "maxLambdaSize": "15mb",
-          "runtime": "Python3.9"
-        }
+        "src": "site_sindicato/wsgi.py",
+        "use": "@vercel/python"
       },
       {
         "src": "build_files.sh",
@@ -19,13 +15,13 @@
     ],
     "routes": [
       {
-        "src": "/static/(.*)",
-        "dest": "/static/$1"
+        "src": "/statiC/(.*)",
+        "dest": "/statiC/$1"
       },
       {
         "src": "/(.*)",
-        "dest": "{site_sindicato}/wsgi.py"
+        "dest": "site_sindicato/wsgi.py"
       }
     ]
-  }
+  }  
   
