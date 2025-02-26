@@ -1,0 +1,140 @@
+{% extends 'pages/basepages.html' %}
+{% block title %} SINDSAÚDE - Fale conosco {% endblock %}
+{% load static %}
+...
+
+{% block content %}
+<main class="mainfaleconosco">
+    
+    <section class="contact-form">
+        <h2>FALE CONOSCO.</h2>
+        <p><strong class="warning">ATENÇÃO:</strong> O tempo de resposta para contato realizado com o sindicato é de 10 dias úteis <strong>APENAS</strong> para filiados.</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">NOME:</label>
+                    <input type="text" id="name" name="name">
+                    <label for="matricula">MATRÍCULA:</label>
+                    <input type="text" id="matricula" name="matricula">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">EMAIL:</label>
+                    <input type="email" id="email" name="email">
+                    <label for="telefone">TELEFONE:</label>
+                    <input type="text" id="telefone" name="telefone">
+                </div>
+                
+                <div class="form-group">
+                    <label for="distrito">DISTRITO:</label>
+                    <input type="text" id="distrito" name="distrito">
+                    <label for="unidade">UNIDADE:</label>
+                    <input type="text" id="unidade" name="unidade">
+                </div>
+                
+                <label for="assunto">ASSUNTO:</label>
+                <input type="text" id="assunto" name="assunto">
+                
+                <label for="mensagem">MENSAGEM:</label>
+                <textarea id="mensagem" name="mensagem"></textarea>
+                
+                <button type="submit" class="btn-enviar">ENVIAR</button>
+            </form>
+        </section>
+        
+        <section class="contact-info">
+            <h3>OUTRAS FORMAS DE CONTATO:</h3>
+            <div class="contact-item whatsapp">
+                <span>📱</span>
+                <p>Envie uma mensagem!</p>
+            </div>
+            <div class="contact-item endereco">
+                <span>📍</span>
+                <p><strong>Endereço:</strong> Av. José Faria da Rocha, 1479 - Eldorado, Contagem - MG, 32315-040</p>
+                <p>FUNCIONAMENTO: 08:00 AS 16:00</p>
+            </div>
+            <div class="contact-item telefone">
+                <span>📞</span>
+                <p><a href="tel:+3132559670">(31) 2559-6670</a></p>
+                <p>FUNCIONAMENTO: 08:00 AS 16:00</p>
+            </div>
+            <div class="contact-item instagram">
+                <span>📸</span>
+                <p>@sindsaudecontagem</p>
+            </div>
+        </section>
+</main>
+
+<style>
+    .mainfaleconosco {
+        display: flex;
+        justify-content: space-between;
+        padding: 200px;
+    }
+
+    .contact-form {
+        width: 60%;
+        gap: 20px;
+        padding: 0 100px 0 50px;
+    }
+
+    .contact-form h2 {
+        color: #d13434;
+    }
+
+    .warning {
+        color: red;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .form-group {
+        display: flex;
+        justify-content: space-between;
+        gap: 15px;
+    }
+
+    input, textarea {
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 5px;
+        border: 1px solid rgb(117, 115, 115);
+        border-radius: 8px;
+    }
+    
+    #mensagem{
+        padding: 20px;
+    }
+
+    .btn-enviar {
+        background: #d13434;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+    }
+
+    .contact-info {
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .contact-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .whatsapp { background: #d4edda; }
+    .endereco { background: #f8f9fa; }
+    .telefone { background: #e9ecef; }
+    .instagram { background: #f8d7da; }
+</style>
+{% endblock %}

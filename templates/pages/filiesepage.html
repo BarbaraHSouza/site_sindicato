@@ -1,0 +1,27 @@
+{% extends 'pages/basepages.html' %}
+{% block title %} SINDSAÚDE - FILIE-SE {% endblock %}
+{% load static %}
+...
+
+{% block content %}
+<main class="apresentacao">
+    <section class="apresentacao__conteudo">
+        <h1 class="apresentacao__conteudo__subtitulo">Venha fazer parte do <strong>SindSaúde </strong></h1>
+        <p class="apresentacao__conteudo__texto"> <strong> ATENÇÃO: </strong> Para fazer a filiação é necessário imprimir e preencher a seguinte ficha da de filiação <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+          </svg> PDF e o seguinte formulário incluindo seu último contra-cheque <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+          </svg> FORMULÁRIO ONLINE.</p>
+        <h1 class="apresentacao__conteudo__subtitulo">Como é ser um filiado do SindSaude?</h1>
+        <p class="apresentacao__conteudo__texto"> Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores ipsum delis forum birol parela maxime infena. Excepteur sint occaecat cupidatat non.</p>
+        <h1 class="apresentacao__conteudo__subtitulo">Formas de fazer parte</h1>
+        <div>
+            <p class="apresentacao__conteudo__texto"> 1) Desconto em folha: Todo mês é descontado o valor de 1% (um por cento) do salário base em folha. Para isso é necessário ter margem na folha de pagamento; </p>
+            <p class="apresentacao__conteudo__texto"> 2) Pix recorrente: O filiado faz a transferencia do valor de 1% (um por cento) do seu salário base mensalmente. O não envio deixa a situação do filiado como inativa. </p>
+        </div>
+
+
+    </section>
+    <img class="imagemmedia" src="{% static 'assets/logohorizontalsindicato.png' %}" alt="SindSaúde">
+</main>
+{% endblock %}

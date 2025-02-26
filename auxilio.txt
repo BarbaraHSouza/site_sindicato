@@ -1,0 +1,27 @@
+executar o django sem adm
+
+C:\Users\081745\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.12_qbz5n2kfra8p0\LocalCache\local-packages\Python312\Scripts\django-admin.exe AUTERE AQUI
+
+OU
+
+python -m django AUTERE AQUI
+
+
+NÃO PRECISA DISSO!!!!!!!!!!!!!!
+
+
+FORMATAÇÃO DA PAGINA DE CONVICAÇÕES
+        <div class="timeline-item">
+            <h3>PLENÁRIAS CAMPANHA SALARIAL</h3>
+            <div class="convocacao-card">
+                <img src="plenaria.jpg" alt="Plenárias Campanha Salarial 2025">
+            </div>
+        </div>
+        <div class="timeline-item">
+            <h3>CONVOCAÇÃO ANTERIOR</h3>
+            <div class="convocacao-card">
+                <img src="convocacao_anterior.jpg" alt="Convocação Anterior">
+            </div>
+        </div>
+
+

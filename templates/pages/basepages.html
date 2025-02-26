@@ -1,0 +1,39 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} SINDSAÚDE {% endblock %}</title> 
+    <link rel="shortcut icon" type="imagem" href="{% static 'assets/logosecretaria.png' %}">
+    <link rel="stylesheet" href="{% static 'styles/style.css'%}">
+    
+    
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header-content">
+            <div class="logo"> 
+                <a href="{% url 'index'%}">
+                    <img  src="{% static 'assets/logohorizontalsindicato.png' %}" alt="SindSaúde">
+                </a>
+            </div>
+            <nav class="nav">
+                <a href="{% url 'sobrenos' %}">SOBRE NÓS</a>
+                <a href="{% url 'documentos' %}">DOCUMENTOS</a>
+                <a href="{% url 'faleconosco' %}">FALE CONOSCO</a>
+            </nav>
+            <a href="{% url 'filiese'%}" class="file-se">FILE-SE</a>
+        </div>
+    </header>
+    {% block content %}
+    
+    {% endblock %}
+</body>
+
+<footer></footer>
+</html>

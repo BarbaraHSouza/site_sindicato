@@ -1,0 +1,34 @@
+{% extends 'acseace/baseacseace.html' %}
+{% block title %} SAA - Secretária ACS e ACE {% endblock %}
+{% load static %}
+
+{% block content %}
+<section class="banner">
+    <img src="logosecretaria.png" alt="Pauta: Incentivo Financeiro Adicional">
+   
+</section>
+<section class="acesso-rapido">
+    <h2>ACESSO RÁPIDO</h2>
+    <div class="content">
+        <div class="icons">
+            <div>
+                <a href="{% url 'denuncia' %}" >
+                    <img src="{% static 'assets/denuncia.png' %}" alt="Denúncia">
+                    <p>DENÚNCIA</p>
+                </a>
+            </div>
+            <div>
+                <a href="{% url 'proximoseventos'%}" >
+                    <img src="{% static 'assets/proximoseventos.png' %}" alt="Próximos Eventos">
+                    <p>PRÓXIMOS EVENTOS</p>
+                </a>
+            </div>
+            <div>
+                <a href="{% url 'faleconosco'%}">
+                    <img src="{% static 'assets/faleconosco.png' %}" alt="fale conosco">
+                    <p>FALE CONOSCO</p>
+                </a>
+            </div>
+        </div>
+    </div>
+{% endblock %}

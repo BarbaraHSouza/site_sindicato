@@ -1,0 +1,61 @@
+{% extends 'acseace/baseacseace.html' %}
+{% block title %} SAA - Perguntas e Respostas {% endblock %}
+{% load static %}
+...
+
+{% block content %}
+    <div class="container">
+        <h2 class="titulofaq">PERGUNTAS E RESPOSTAS</h2>
+        
+        <div class="accordion"> 
+            <span class="accordion-title">INFORMAÇÕES SOBRE O INCETIVO FINANCEIRO ADICIONAL</span>
+            <span class="accordion-icon">⬇</span>
+        </div>
+        <div class="accordion-content">
+            <p> 
+                Lorem ipsum dolor sit amet consectetur. Habitasse eu at at tempor adipiscing amet. At sollicitudin volutpat leo nunc gravida justo dictumst. Diam sem ac aliquet id sit nunc. Tempus enim lacus iaculis elit sit iaculis vel faucibus eget. Mattis et volutpat purus urna lorem pellentesque amet nulla sed. Elit augue id molestie eget imperdiet integer elementum nulla turpis. Ornare pellentesque ornare porta pretium ipsum mauris fermentum quisque. Purus est cras lacus viverra sed nunc massa. Non scelerisque orci eget pretium ac accumsan semper tortor. Odio fermentum nulla id auctor tristique. Elit consectetur faucibus urna id justo viverra lectus quam.
+                Nulla semper sagittis consectetur odio adipiscing nisl lobortis. Leo congue et non mattis facilisi. Libero tellus quis id pulvinar tellus. 
+            </p>
+        </div>
+        <div class="accordion"> 
+            <span class="accordion-title">INFORMAÇÕES SOBRE O QUE JÁ FOI FEITO QUANTO A UNIFORMES</span>
+            <span class="accordion-icon">⬇</span>
+        </div>
+        <div class="accordion-content">
+            <p> 
+                Lorem ipsum dolor sit amet consectetur. Habitasse eu at at tempor adipiscing amet. At sollicitudin volutpat leo nunc gravida justo dictumst. Diam sem ac aliquet id sit nunc. Tempus enim lacus iaculis elit sit iaculis vel faucibus eget. Mattis et volutpat purus urna lorem pellentesque amet nulla sed. Elit augue id molestie eget imperdiet integer elementum nulla turpis. Ornare pellentesque ornare porta pretium ipsum mauris fermentum quisque. Purus est cras lacus viverra sed nunc massa. Non scelerisque orci eget pretium ac accumsan semper tortor. Odio fermentum nulla id auctor tristique. Elit consectetur faucibus urna id justo viverra lectus quam.
+                Nulla semper sagittis consectetur odio adipiscing nisl lobortis. Leo congue et non mattis facilisi. Libero tellus quis id pulvinar tellus. 
+            </p>
+        </div>
+        <div class="accordion"> 
+            <span class="accordion-title">INFORMAÇÕES SOBRE O PLANO DE CARGO CARREIRA E VALORES</span>
+            <span class="accordion-icon">⬇</span>
+        </div>
+        <div class="accordion-content">
+            <p> 
+                Lorem ipsum dolor sit amet consectetur. Habitasse eu at at tempor adipiscing amet. At sollicitudin volutpat leo nunc gravida justo dictumst. Diam sem ac aliquet id sit nunc. Tempus enim lacus iaculis elit sit iaculis vel faucibus eget. Mattis et volutpat purus urna lorem pellentesque amet nulla sed. Elit augue id molestie eget imperdiet integer elementum nulla turpis. Ornare pellentesque ornare porta pretium ipsum mauris fermentum quisque. Purus est cras lacus viverra sed nunc massa. Non scelerisque orci eget pretium ac accumsan semper tortor. Odio fermentum nulla id auctor tristique. Elit consectetur faucibus urna id justo viverra lectus quam.
+                Nulla semper sagittis consectetur odio adipiscing nisl lobortis. Leo congue et non mattis facilisi. Libero tellus quis id pulvinar tellus. 
+            </p>
+        </div>
+        <div class="accordion"> 
+            <span class="accordion-title">O QUE É MESA SUS? </span>
+            <span class="accordion-icon">⬇</span>
+        </div>
+        <div class="accordion-content">
+            <p> 
+                Lorem ipsum dolor sit amet consectetur. Habitasse eu at at tempor adipiscing amet. At sollicitudin volutpat leo nunc gravida justo dictumst. Diam sem ac aliquet id sit nunc. Tempus enim lacus iaculis elit sit iaculis vel faucibus eget. Mattis et volutpat purus urna lorem pellentesque amet nulla sed. Elit augue id molestie eget imperdiet integer elementum nulla turpis. Ornare pellentesque ornare porta pretium ipsum mauris fermentum quisque. Purus est cras lacus viverra sed nunc massa. Non scelerisque orci eget pretium ac accumsan semper tortor. Odio fermentum nulla id auctor tristique. Elit consectetur faucibus urna id justo viverra lectus quam.
+                Nulla semper sagittis consectetur odio adipiscing nisl lobortis. Leo congue et non mattis facilisi. Libero tellus quis id pulvinar tellus. 
+            </p>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll(".accordion").forEach(item => {
+            item.addEventListener("click", function() {
+                this.classList.toggle("active");
+                let icon = this.querySelector(".accordion-icon");
+                icon.textContent = this.classList.contains("active") ? "⬆" : "⬇";
+            });
+        });
+    </script>
+{% endblock %}

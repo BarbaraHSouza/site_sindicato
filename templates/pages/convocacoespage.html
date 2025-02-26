@@ -1,0 +1,22 @@
+{% extends 'pages/basepages.html' %}
+{% block title %} SINDSAÚDE - Convocações {% endblock %}
+{% load static %}
+...
+
+{% block content %}
+<div class="container">
+    <h2>CONVOCAÇÕES - FAÇA PARTE DA LUTA</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            {% for convocacao in convocacoes %}
+                <div class="timeline-item">
+                    <h3>{{ convocacao.titulo }}</h3>
+                    <div class="convocacao-card">
+                        <img src="{{ convocacao.imagem.url }}" alt="{{ convocacao.titulo }}">
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+{% endblock %}

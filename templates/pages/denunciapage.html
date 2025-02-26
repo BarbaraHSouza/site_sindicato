@@ -1,0 +1,19 @@
+{% extends 'pages/basepages.html' %}
+{% block title %} SINDSAÚDE - Denúncias {% endblock %}
+{% load static %}
+...
+
+{% block content %}
+<main class="apresentacao">
+    <section class="apresentacao__conteudo">
+        <h1 class="apresentacao__conteudo__titulo__denuncia">Denúncia</h1>
+        <p class="apresentacao__conteudo__texto"> Se você presenciou ou vivenciou alguma situação que considera inadequada no ambiente de trabalho, como maus-tratos, diferenciação entre os trabalhadores, condições de trabalho insalubres ou qualquer outra prática que precise ser investigada, denuncie! Sua denúncia será tratada com sigilo e seriedade. Juntos, podemos melhorar o ambiente de trabalho e garantir o respeito a todos.  </p>
+        <p class="apresentacao__conteudo__texto"> <strong> ATENÇÃO:</strong> o canal de denuncia é um dos canais feitos exclusivamente para filiados do sindicato e não admite o anonimato, embora o denunciante possa dizer que não quer que seu nome seja divulgado.</p>
+        <div class="apresentacao__botoom">
+            <a href="{% url 'filiese'%}" class="file-se">DENUNCIE</a>
+        </div>
+    </section>
+    <img class="imagemmedia" src="{% static 'assets/denuncia.png' %}" alt="SindSaúde">
+</main>
+
+{% endblock %}

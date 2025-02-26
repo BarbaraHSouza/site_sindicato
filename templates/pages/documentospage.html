@@ -1,0 +1,46 @@
+{% extends 'pages/basepages.html' %}
+{% block title %} SINDSAÚDE - Documentos {% endblock %}
+{% load static %}
+...
+
+{% block content %}
+    <div class="container">
+        <h2 class="titulodoc">DOCUMENTOS - SINDSAUDE</h2>
+        
+        <div class="accordion"> 
+            <span class="accordion-title">PAUTAS DE REUNIÃO</span>
+            <span class="accordion-icon">⬇</span>
+        </div>
+        <div class="accordion-content">
+            <ul>
+                <li>Pauta I</li>
+                <li>Pauta II</li>
+                <li>Pauta III</li>
+                <li>Pauta IV</li>
+            </ul>
+        </div>
+        
+        <div class="accordion"> 
+            <span class="accordion-title">PAUTAS DE REUNIÃO</span>
+            <span class="accordion-icon">⬇</span>
+        </div>
+        <div class="accordion"> 
+            <span class="accordion-title">PAUTAS DE REUNIÃO</span>
+            <span class="accordion-icon">⬇</span>
+        </div>
+        <div class="accordion"> 
+            <span class="accordion-title">PAUTAS DE REUNIÃO</span>
+            <span class="accordion-icon">⬇</span>
+        </div>
+    </div>
+
+    <script>
+        document.querySelectorAll(".accordion").forEach(item => {
+            item.addEventListener("click", function() {
+                this.classList.toggle("active");
+                let icon = this.querySelector(".accordion-icon");
+                icon.textContent = this.classList.contains("active") ? "⬆" : "⬇";
+            });
+        });
+    </script>
+{% endblock %}

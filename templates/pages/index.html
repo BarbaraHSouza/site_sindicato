@@ -1,0 +1,51 @@
+{% extends 'pages/basepages.html' %}
+{% block title %} SINDSAÚDE {% endblock %}
+{% load static %}
+{% block content %}
+<section class="banner">
+    <img src="logosecretaria.png" alt="Pauta: Incentivo Financeiro Adicional">
+    <h1>Pauta: <span>Incentivo Financeiro Adicional</span></h1>
+</section>
+<section class="acesso-rapido">
+    <h2>ACESSO RÁPIDO</h2>
+    <div class="content">
+        <div class="icons">
+            <div>
+                <a href="{% url 'denuncia' %}" >
+                    <img src="{% static 'assets/denuncia.png' %}" alt="Denúncia">
+                    <p>DENÚNCIA</p>
+                </a>
+            </div>
+            <div>
+                <a href="{% url 'agentedesaude'%}" >
+                    <img src="{% static 'assets/logosecretaria.png' %}" alt="Secretaria ACS e ACE">
+                    <p>SECRETARIA ACS e ACE</p>
+                </a>
+            </div>
+            <div>
+                <a href="{% url 'convocacoes'%}">
+                    <img src="{% static 'assets/convocacoes.png' %}" alt="Convocações">
+                    <p>CONVOCAÇÕES</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<div class="container">
+    <h2 class="titulodoc">ÚLTIMAS NOTICIAS</h2>
+    <div class="timeline">
+        <div class="timeline-item">
+            {% for convocacao in convocacoes %}
+                <div class="timeline-item">
+                    <h3>{{ convocacao.titulo }}</h3>
+                    <div class="convocacao-card">
+                        <img src="{{ convocacao.imagem.url }}" alt="{{ convocacao.titulo }}">
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+
+{% endblock %}

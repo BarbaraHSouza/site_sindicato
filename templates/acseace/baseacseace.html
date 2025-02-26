@@ -1,0 +1,47 @@
+{% load static %}
+
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %} Secretária ACS e ACE {% endblock %}</title> 
+    <link rel="shortcut icon" type="imagem" href="{% static 'assets/logosecretaria.png' %}">
+    <link rel="stylesheet" href="{% static 'styles/acseace.css'%}">
+</head>
+<body>
+    <div class="top-bar">
+        <a href="{% url 'index' %}">
+        <img src="{% static 'assets/logohorizontalsindicato.png' %}" alt="SindSaúde"></a>
+        <a href="{% url 'filiese'%}" class="filie-se">FILIE-SE</a>
+    </div>
+    <div class="header-container">
+        <div class="header">
+            <a href="{% url 'agentedesaude' %}">
+            <img src="{% static 'assets/logosecretaria.png' %}" alt="Secretaria ACS e ACE"> </a>
+            <div class="header-title">SECRETÁRIA ACS E ACE</div>
+        </div>
+        <div class="nav-container">
+            <div class="nav-bar">
+                <a href="{% url 'quemsomos' %}" >QUEM SOMOS?</a>
+                <a href="{% url 'conquistas' %}">CONQUISTAS</a>
+                <a href="{% url 'juntese' %}">JUNTE-SE A NÓS</a>
+                <a href="{% url 'faq' %}">FAQ</a>
+            </div>
+            <div class="sub-nav">
+                <a href="{% url 'ifa' %}">INCENTIVO FINANCEIRO ADICIONAL</a>
+                <a href="{% url 'pccv' %}">PCCV</a>
+                <a href="#">OUTRA COISA</a>
+            </div>
+        </div>
+    </div>
+</body>
+     {% block content %}{% endblock %}
+     <footer></footer>
+</body>
+
+
+</html>
