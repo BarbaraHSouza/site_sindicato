@@ -23,8 +23,8 @@ if not SECRET_KEY:
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.environ.get("DEBUG", "True") == "True"
 
-allowed_hosts = os.environ.get("ALLOWED_HOSTS", "localhost")
-ALLOWED_HOSTS = allowed_hosts.split(",")
+# Se você definiu a variável ALLOWED_HOSTS no painel da Render, pode ler assim:
+ALLOWED_HOSTS = ["https://site-sindicato.onrender.com/"]
 
 
 
